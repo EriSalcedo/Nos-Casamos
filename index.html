@@ -1,23 +1,24 @@
 <body>
 
+  <!-- Música automática -->
+  <audio autoplay loop>
+    <source src="audio/musica.mp3" type="audio/mpeg">
+  </audio>
+
   <!-- PORTADA -->
-  <div id="portada">
-    <h1>Cris & Eri</h1>
-    <p class="fecha">Nos casamos</p>
+  <section id="portada">
+    <div class="overlay">
+      <h1>Cristian & Erika</h1>
+      <p class="fecha">28 · Agosto · 2026</p>
 
-    <button id="entrarBtn">Entrar</button>
-  </div>
+      <button id="entrarBtn">Abrir invitación</button>
+    </div>
+  </section>
 
-  <!-- CONTENIDO (oculto al inicio) -->
+  <!-- CONTENIDO (oculto por ahora) -->
   <div id="contenido" class="oculto">
-    <section class="section">
-      <h2>Bienvenidos</h2>
-      <p>
-        Nos hace muy felices compartir este momento con ustedes.
-      </p>
-    </section>
+    <!-- aquí irá todo después -->
   </div>
 
   <script src="script.js"></script>
 </body>
-
