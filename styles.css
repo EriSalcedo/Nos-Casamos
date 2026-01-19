@@ -1,11 +1,16 @@
 /* ===== PORTADA ===== */
 #portada {
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    #eaf6f8,
-    #ffffff
-  );
+  background-image: url('images/portada.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Capa suave para que el texto se lea */
+#portada .overlay {
+  background: rgba(255, 255, 255, 0.75);
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,34 +18,40 @@
   text-align: center;
 }
 
+/* Títulos */
 #portada h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 3rem;
+  letter-spacing: 0.1em;
   color: #6f8f82;
   margin-bottom: 0.5rem;
 }
 
 #portada .fecha {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
   color: #4a4a4a;
 }
 
+/* Botón animado */
 #portada button {
   padding: 0.8rem 2.5rem;
   border: none;
   border-radius: 40px;
   background-color: #b7d9c7;
   color: #355f55;
-  font-size: 1rem;
+  font-size: 0.95rem;
   cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 #portada button:hover {
   background-color: #b8dfe6;
+  transform: scale(1.08);
 }
 
-/* ===== CONTENIDO ===== */
+/* ===== OCULTO ===== */
 .oculto {
   display: none;
 }
