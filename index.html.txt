@@ -1,0 +1,22 @@
+<body>
+
+  <!-- PORTADA -->
+  <div id="portada">
+    <h1>Cris & Eri</h1>
+    <p class="fecha">Nos casamos</p>
+
+    <button id="entrarBtn">Entrar</button>
+  </div>
+
+  <!-- CONTENIDO (oculto al inicio) -->
+  <div id="contenido" class="oculto">
+    <section class="section">
+      <h2>Bienvenidos</h2>
+      <p>
+        Nos hace muy felices compartir este momento con ustedes.
+      </p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
