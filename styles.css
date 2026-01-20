@@ -2,8 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.envelope {
   position: relative;
   width: 320px;
   height: 460px;
@@ -85,7 +83,7 @@ h1 {
 .sobre {
   position: relative;
   width: 80%;
-  height: 80%;
+  height: 75%;
   margin: auto;
   background: #ffffff;
   z-index: 2;
@@ -126,7 +124,7 @@ button:hover {
   width: 70px;
   height: 70px;
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   background-image: url("img/sello.png");
@@ -142,3 +140,4 @@ button:hover {
   50%  { transform: translateX(-50%) scale(1.08); }
   100% { transform: translateX(-50%) scale(1); }
 }
+
