@@ -1,12 +1,17 @@
 /* ===== PORTADA ===== */
 #portada {
   height: 100vh;
-  background-image: url('images/portada.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  background: url("img/portada.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.overlay {
+  background: rgba(255, 255, 255, 0.65);
+  padding: 3rem;
+  text-align: center;
+}
 /* Capa suave para que el texto se lea */
 #portada .overlay {
   background: rgba(255, 255, 255, 0.75);
@@ -55,3 +60,4 @@
 .oculto {
   display: none;
 }
+
