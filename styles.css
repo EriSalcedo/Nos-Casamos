@@ -24,7 +24,7 @@ body {
 
 /* SOBRE */
 .envelope {
-  position: relative;
+  position: absolute;
   width: 320px;
   height: 460px;
   background: #f4f4f2;
@@ -100,3 +100,4 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
