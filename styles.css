@@ -22,7 +22,6 @@ body {
   position: relative;
 }
 
-/* SOBRE */
 .envelope {
   position: absolute;
   width: 320px;
@@ -100,5 +99,6 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
