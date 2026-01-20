@@ -125,25 +125,24 @@ button:hover {
   .sello {
   width: 70px;
   height: 70px;
-  margin: 40px auto;
   position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   background-image: url("img/sello.png");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
   cursor: pointer;
   z-index: 5;
-  transition: transform 0.3s ease;
+  animation: pulse 2s infinite;
 }
 @keyframes pulse {
-  0% { transform: translateX(-50%) scale(1); }
-  50% { transform: translateX(-50%) scale(1.08); }
+  0%   { transform: translateX(-50%) scale(1); }
+  50%  { transform: translateX(-50%) scale(1.08); }
   100% { transform: translateX(-50%) scale(1); }
 }
 
-.sello {
-  animation: pulse 2s infinite;
-}
 
 
 
