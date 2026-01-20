@@ -1,4 +1,9 @@
 .envelope {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.envelope {
   position: relative;
   width: 320px;
   height: 460px;
@@ -91,14 +96,20 @@ button:hover {
   align-items: center;
 }
 .sobre {
-  width: 90%;
-  max-width: 400px;
-  height: 600px;
-  background: #fbfbfa;
   position: relative;
-  text-align: center;
-  padding-top: 80px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  background: #ffffff;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
 }
 .nombres {
   font-family: 'Allura', cursive;
@@ -133,6 +144,7 @@ button:hover {
   50% { transform: scale(1.05); opacity: 0.85; }
   100% { transform: scale(1); opacity: 1; }
 }
+
 
 
 
