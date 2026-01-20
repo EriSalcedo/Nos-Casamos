@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -19,31 +20,27 @@
     <source src="audio/musica.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- PORTADA -->
-  <section id="portada">
+  <!-- SOBRE -->
+  <div class="envelope">
+    <div class="envelope-back"></div>
+    <div class="envelope-front"></div>
+  </div>
 
-    <div class="envelope">
+  <!-- CONTENIDO ENCIMA DEL SOBRE -->
+  <div class="contenido">
+    <h1 class="nombres">
+      Cristian<br>
+      <span>&</span><br>
+      Erika
+    </h1>
 
-      <div class="envelope-back"></div>
+    <div id="sello" class="sello"></div>
 
-      <div class="card sobre">
-        <h1 class="nombres">
-          Cristian <br>
-          <span>&</span><br>
-          Erika
-        </h1>
+    <p class="subtitle">Tenemos una noticia…</p>
+  </div>
 
-        <div class="sello" id="sello"></div>
+</section>
 
-        <p class="subtitle">Tenemos una noticia…</p>
-      </div>
-
-      <div class="envelope-front"></div>
-
-    </div>
-
-  </section>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
