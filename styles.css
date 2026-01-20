@@ -28,9 +28,9 @@
 
 /* Títulos */
 #portada h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 3rem;
-  letter-spacing: 0.1em;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  letter-spacing: 2pxem;
   color: #6f8f82;
   margin-bottom: 0.5rem;
 }
@@ -63,6 +63,7 @@
 .oculto {
   display: none;
 }
+
 
 
 
