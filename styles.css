@@ -3,13 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Cormorant Garamond', serif;
   background-color: #f6f7f5;
   color: #2f3e3a;
 }
-
 #portada {
   height: 100vh;
   background-image: url("img/portada.jpg");
@@ -19,26 +17,22 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .overlay {
   background: rgba(255, 255, 255, 0.75);
   padding: 60px 40px;
   text-align: center;
   border-radius: 12px;
 }
-
 h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 4rem;
   color: #6b8f7b;
   margin-bottom: 20px;
 }
-
 .fecha {
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
-
 button {
   background-color: #b7d3c6;
   border: none;
@@ -48,7 +42,6 @@ button {
   cursor: pointer;
   transition: transform 0.3s ease, background 0.3s ease;
 }
-
 button:hover {
   transform: translateY(-4px);
   background-color: #a3c4b5;
@@ -60,7 +53,6 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
-
 .sobre {
   width: 90%;
   max-width: 400px;
@@ -71,43 +63,36 @@ button:hover {
   padding-top: 80px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
-
 .nombres {
   font-family: 'Allura', cursive;
   font-size: 3.2rem;
   color: #8aa39b;
   letter-spacing: 1px;
 }
-
 .nombres span {
   font-size: 1.6rem;
   opacity:0.8;
 }
-
 #sello {
   width: 90px;
   margin: 40px auto;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
 #sello:hover {
   transform: scale(1.05);
 }
-
 .indicacion {
   position: absolute;
   bottom: 40px;
   width: 100%;
   font-size: 0.9rem;
 }
-
 .titilar {
   display: inline-block;
   margin-top: 6px;
   animation: titilar 1.5s infinite;
 }
-
 @keyframes titilar {
   0% { opacity: 0.3; }
   50% { opacity: 1; }
