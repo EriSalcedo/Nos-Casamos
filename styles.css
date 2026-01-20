@@ -1,69 +1,115 @@
-/* ===== PORTADA ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #f6f7f5;
+  color: #2f3e3a;
+}
+
 #portada {
   height: 100vh;
   background-image: url("img/portada.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .overlay {
-  background: rgba(255, 255, 255, 0.65);
-  padding: 3rem;
-  text-align: center;
-}
-/* Capa suave para que el texto se lea */
-#portada .overlay {
   background: rgba(255, 255, 255, 0.75);
-  height: 100%;
+  padding: 60px 40px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: #6b8f7b;
+  margin-bottom: 20px;
+}
+
+.fecha {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #b7d3c6;
+  border: none;
+  padding: 14px 36px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  background-color: #a3c4b5;
+}
+#portada {
+  height: 100vh;
+  background-color: #f6f7f5;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.sobre {
+  width: 90%;
+  max-width: 400px;
+  height: 600px;
+  background: #fbfbfa;
+  position: relative;
   text-align: center;
+  padding-top: 80px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-/* Títulos */
-#portada h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 3.5rem;
-  letter-spacing: 2pxem;
-  color: #6f8f82;
-  margin-bottom: 0.5rem;
+.nombres {
+  font-family: 'Allura', cursive;
+  font-size: 3.2rem;
+  color: #8aa39b;
+  letter-spacing: 1px;
 }
 
-#portada .fecha {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
-  margin-bottom: 2.5rem;
-  color: #4a4a4a;
+.nombres span {
+  font-size: 1.6rem;
+  opacity:0.8;
 }
 
-/* Botón animado */
-#portada button {
-  padding: 0.8rem 2.5rem;
-  border: none;
-  border-radius: 40px;
-  background-color: #b7d9c7;
-  color: #355f55;
-  font-size: 0.95rem;
+#sello {
+  width: 90px;
+  margin: 40px auto;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-#portada button:hover {
-  background-color: #b8dfe6;
-  transform: scale(1.08);
+#sello:hover {
+  transform: scale(1.05);
 }
 
-/* ===== OCULTO ===== */
-.oculto {
-  display: none;
+.indicacion {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  font-size: 0.9rem;
 }
 
+.titilar {
+  display: inline-block;
+  margin-top: 6px;
+  animation: titilar 1.5s infinite;
+}
 
-
-
+@keyframes titilar {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
