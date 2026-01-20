@@ -1,7 +1,11 @@
 /* ===== PORTADA ===== */
 #portada {
   height: 100vh;
-  background: url("img/portada.jpg") center/cover no-repeat;
+  background-image: url("img/portada.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,4 +64,5 @@
 .oculto {
   display: none;
 }
+
 
