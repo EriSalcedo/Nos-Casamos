@@ -26,9 +26,12 @@ body {
   position: absolute;
   width: 320px;
   height: 460px;
-  background: #f4f4f2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fdfbf7;
+  border: 2px solid #d8d3c8;
   z-index: 1;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 .envelope-back {
@@ -43,8 +46,9 @@ body {
   left: 0;
   width: 100%;
   height: 55%;
-  background: #f4f4f2;
+  background: #f0ede7;
   clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  border-top: 2px solid #d8d3c8;
 }
 
 /* CONTENIDO ENCIMA DEL SOBRE */
@@ -52,12 +56,17 @@ body {
   position: absolute;
   width: 320px;
   height: 460px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 3;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 60px 20px;
+
   pointer-events: none;
 }
 
@@ -99,6 +108,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
