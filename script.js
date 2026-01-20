@@ -1,8 +1,7 @@
-const boton = document.getElementById('entrarBtn');
-const portada = document.getElementById('portada');
-const contenido = document.getElementById('contenido');
+const sello = document.getElementById("sello");
+const musica = document.getElementById("musica");
 
-boton.addEventListener('click', () => {
-  portada.style.display = 'none';
-  contenido.classList.remove('oculto');
+sello.addEventListener("click", () => {
+  musica.play();
+  document.getElementById("portada").style.display = "none";
 });
