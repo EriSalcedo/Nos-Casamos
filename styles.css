@@ -23,7 +23,7 @@ body {
 /* SOBRE */
 .envelope {
   position: relative;
-  width: 350px;
+  width: 380px;
   height: 500px;
   background: #e8e4d8;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
@@ -105,8 +105,8 @@ body {
 .subtitle {
   position: absolute;
   bottom: 26px;
-  font-size: 1.3rem;
-  letter-spacing: 1.2px; 
+  font-size: 1.4rem;
+  letter-spacing: 1px; 
   margin-bottom: 28px;
   color: #6f7f79;
   font-style: italic;
@@ -139,6 +139,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
