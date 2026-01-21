@@ -7,4 +7,8 @@ sello.addEventListener("click", () => {
   musica.play();
 
   envelope.classList.add("abierto");
+  setTimeout(() => {
+  envelope.classList.add("desaparece");
+}, 1600);
 });
+
