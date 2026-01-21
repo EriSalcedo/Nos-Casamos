@@ -37,15 +37,15 @@ body {
   inset: 0;
   background:
     linear-gradient(135deg,
-      transparent 54%,
-      #9c9c9c 50%,
-      #9c9c9c 53%,
-      transparent 50%),
+      transparent 48%,
+      #9c9c9c 49%,
+      #9c9c9c 51%,
+      transparent 52%),
     linear-gradient(-135deg,
-      transparent 54%,
-      #9c9c9c 50%,
-      #9c9c9c 53%,
-      transparent 50%);
+      transparent 48%,
+      #9c9c9c 49%,
+      #9c9c9c 51%,
+      transparent 52%);
   z-index: 2;
   pointer-events: none;
 }
@@ -139,6 +139,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
