@@ -32,42 +32,25 @@ body {
 }
 
 /* Líneas del sobre */
-.envelope::before,
-.envelope::after {
+.envelope::before {
   content: "";
   position: absolute;
   inset: 0;
+  background:
+    linear-gradient(
+      to bottom right,
+      transparent 49.6%,
+      #9f9b92 50%,
+      transparent 50.4%
+    ),
+    linear-gradient(
+      to bottom left,
+      transparent 49.6%,
+      #9f9b92 50%,
+      transparent 50.4%
+    );
   pointer-events: none;
-}
-.envelope::before {
-  background:
-    linear-gradient(
-      135deg,
-      transparent 49.5%,
-      #a9a59d 50%,
-      transparent 50.5%
-    ),
-    linear-gradient(
-      225deg,
-      transparent 49.5%,
-      #a9a59d 50%,
-      transparent 50.5%
-    );
-}
-.envelope::after {
-  background:
-    linear-gradient(
-      45deg,
-      transparent 49.5%,
-      #a9a59d 50%,
-      transparent 50.5%
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 49.5%,
-      #a9a59d 50%,
-      transparent 50.5%
-    );
+  z-index: 1;
 }
 
 .envelope-back {
@@ -81,11 +64,11 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 55%;
-  background: #ebe8df;
+  height: 52%;
+  background: #e6e1d6; /* un poco más oscuro */
   clip-path: polygon(0 100%, 50% 0, 100% 100%);
-  border-top: 2px solid #b7b4ad;
-  z-index: 2;
+  border-top: 2px solid #9f9b92;
+  z-index: 3;
 }
 
 /* CONTENIDO ENCIMA */
@@ -104,39 +87,41 @@ body {
 
 .nombres {
   position: absolute;
-  top: 40px;
+  top: 28px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Allura', cursive;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   color: #8aa39b;
   text-align: center;
-  line-height: 1.1;
+  line-height: 1.05;
+  z-index: 5;
 }
 
 .nombres span {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  margin: -4px 0;
   display: block;
-  margin: -6px 0;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  letter-spacing: 1px; 
-  margin-bottom: 45px;
+  font-size: 1.35rem;
+  letter-spacing: 1.2px; 
+  margin-bottom: 50px;
   color: #6f7f79;
   font-style: italic;
-  opacity: 0.85;
+  opacity: 0.9;
+  z-index: 5;
 }
 
 /* SELLO */
 .sello {
   position: absolute;
-  top: 50%;
+  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 72px;
-  height: 72px;
+  width: 76px;
+  height: 76px;
   background-image: url("img/sello.png");
   background-size: cover;
   background-position: center;
@@ -154,14 +139,3 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
-
-
-
-
-
-
-
-
-
-
-
