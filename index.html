@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -18,39 +17,32 @@
   <audio id="musica" loop>
     <source src="audio/musica.mp3" type="audio/mpeg">
   </audio>
+
   <section id="portada">
-  <div class="envelope">
-
-  <!-- Fondo del sobre -->
-    <div class="envelope-back"></div>
-
-    <!-- Líneas del sobre -->
     <div class="envelope">
-      <div class="envelope-back"></div>
+
+      <!-- Solapa superior -->
+      <div class="envelope-top"></div>
+
+      <!-- Solapa inferior -->
       <div class="envelope-front"></div>
+
+      <!-- Contenido -->
+      <div class="contenido">
+        <h1 class="nombres">
+          Cristian<br>
+          <span>&</span>
+          Erika
+        </h1>
+
+        <button class="sello" id="sello" aria-label="Abrir invitación"></button>
+
+        <p class="subtitle">Tenemos una noticia…</p>
+      </div>
+
     </div>
+  </section>
 
-    <!-- Solapa -->
-    <div class="envelope-front"></div>
-
-  <!-- CONTENIDO ENCIMA -->
-    <div class="contenido">
-      <h1 class="nombres">
-        Cristian<br>
-        <span>&</span><br>
-        Erika
-      </h1>
-
-      <button class="sello" id="sello" aria-label="Abrir invitación"></button>
-
-      <p class="subtitle">Tenemos una noticia…</p>
-    </div>
-
-  </div>
-</section>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
