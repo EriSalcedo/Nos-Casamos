@@ -40,13 +40,13 @@ body {
 }
 
 .envelope::before {
-  border-left: 2px solid #b7b4ad;
-  border-right: 2px solid #b7b4ad;
+  border-left: 1px solid #b7b4ad;
+  border-right: 1px solid #b7b4ad;
   clip-path: polygon(0 100%, 50% 50%, 100% 100%);
 }
 
 .envelope::after {
-  border-top: 2px solid #b7b4ad;
+  border-top: 1px solid #b7b4ad;
   clip-path: polygon(0 0, 50% 50%, 100% 0);
 }
 
@@ -127,6 +127,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
