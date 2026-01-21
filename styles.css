@@ -23,8 +23,8 @@ body {
 /* SOBRE */
 .envelope {
   position: relative;
-  width: 300px;
-  height: 480px;
+  width: 350px;
+  height: 500px;
   background: #e8e4d8;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
   overflow: hidden;
@@ -78,19 +78,19 @@ body {
 
 .nombres {
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Allura', cursive;
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: #8aa39b;
   text-align: center;
-  line-height: 0.9;
+  line-height: 1;
   z-index: 5;
 }
 
 .nombres span {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin: -10px 0 -6px 0;
   display: block;
 }
@@ -98,12 +98,12 @@ body {
 .subtitle {
   position: absolute;
   bottom: 26px;
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   letter-spacing: 1.2px; 
   margin-bottom: 28px;
   color: #6f7f79;
   font-style: italic;
-  opacity: 0.85;
+  opacity: 0.9;
   z-index: 5;
 }
 
@@ -112,6 +112,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  bottom: 50%;
   transform: translate(-50%, -50%);
   width: 75px;
   height: 75px;
@@ -132,6 +133,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
