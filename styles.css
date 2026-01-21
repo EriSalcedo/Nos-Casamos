@@ -27,11 +27,10 @@ body {
   height: 460px;
   background: #f4f4f2;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-  z-index: 1;
 }
 
 /* Líneas del sobre */
-.envelope-back::before {
+.envelope-lines::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -114,4 +113,5 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
