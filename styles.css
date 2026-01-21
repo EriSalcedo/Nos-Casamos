@@ -39,12 +39,12 @@ body {
       transparent 60%,
       #9c9c9c 50%,
       #9c9c9c 53%,
-      transparent 60%),
+      transparent 53%),
     linear-gradient(-135deg,
       transparent 60%,
       #9c9c9c 50%,
       #9c9c9c 53%,
-      transparent 60%);
+      transparent 53%);
   z-index: 2;
   pointer-events: none;
 }
@@ -138,6 +138,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
