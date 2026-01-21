@@ -10,6 +10,7 @@ sello.addEventListener("click", () => {
   envelope.classList.add("abierto");
 
   setTimeout(() => {
+    envelope.style.display = "none";
     invitacion.classList.add("visible");
-  }, 800);
+  }, 1200);
 });
