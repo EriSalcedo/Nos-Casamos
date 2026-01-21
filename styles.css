@@ -31,9 +31,7 @@ body {
   transition: opacity 0.8s ease;
   z-index: 1;
 }
-.envelope.desaparece {
-  opacity:0;
-}
+
 .sobre-superior,
 .sobre-inferior {
   position: absolute;
@@ -55,8 +53,7 @@ body {
 }
 
 /*lineas */
-.sobre-superior::before,
-.sobre-inferior::before {
+.envelope::before,{
   content: "";
   position: absolute;
   inset: 0;
@@ -71,6 +68,7 @@ body {
       #9c9c9c 49%,
       #9c9c9c 51%,
       transparent 52%);
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -214,3 +212,4 @@ body {
 .envelope.abierto .sobre-inferior {
   transform: translateY(120%);
 }
+
