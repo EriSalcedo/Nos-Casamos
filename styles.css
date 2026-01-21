@@ -55,7 +55,8 @@ body {
 }
 
 /*lineas */
-.envelope::before {
+.sobre-superior::before,
+.sobre-inferior::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -70,7 +71,6 @@ body {
       #9c9c9c 49%,
       #9c9c9c 51%,
       transparent 52%);
-  z-index: 2;
   pointer-events: none;
 }
 
@@ -98,10 +98,6 @@ body {
   transform: translateY(0);
   transition: transform 1.2s cubic-bezier(.4,0.2,1),
   opacity 1.5s ease;
-}
-.envelope.abierto .envelope-front {
-  transform: translateY(110%);
-  opacity: 0;
 }
 
 /* CONTENIDO ENCIMA */
@@ -195,10 +191,7 @@ body {
   transform: rotateY 1.2s cubic-bezier(.4,0,.2,1),
   opacity 1.5s ease;
 }
-.envelope.abierto .envelope-top {
-  transform: translateY(-110%);
-  opacity: 0;
-}
+
 #invitacion {
   position: absolute;
   inset: 0;
@@ -214,7 +207,10 @@ body {
   visibility: visible;
 }
 
+.envelope.abierto .sobre-superior {
+  transform: translateY(-120%);
+}
 
-
-
-
+.envelope.abierto .sobre-inferior {
+  transform: translateY(120%);
+}
