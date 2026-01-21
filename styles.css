@@ -25,27 +25,29 @@ body {
   position: relative;
   width: 320px;
   height: 460px;
-  background: #f3f1eb;
+  background: #ebe7dc;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
   overflow: hidden;
 }
 
 /* Líneas del sobre */
-.envelope::before {
+.envelope::before,
+.envelope::after {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(135deg,
-      transparent 49.5%,
-      #cfcfc9 50%,
-      transparent 50.5%),
-    linear-gradient(-135deg,
-      transparent 49.5%,
-      #cfcfc9 50%,
-      transparent 50.5%);
-  z-index: 1;
   pointer-events: none;
+}
+
+.envelope::before {
+  border-left: 2px solid #b7b4ad;
+  border-right: 2px solid #b7b4ad;
+  clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+}
+
+.envelope::after {
+  border-top: 2px solid #b7b4ad;
+  clip-path: polygon(0 0, 50% 50%, 100% 0);
 }
 
 .envelope-back {
@@ -60,9 +62,9 @@ body {
   bottom: 0;
   width: 100%;
   height: 55%;
-  background: #f4f4f2;
+  background: #ebe8df;
   clip-path: polygon(0 100%, 50% 0, 100% 100%);
-  border-top: 1px solid #dedede;
+  border-top: 2px solid #b7b4ad;
   z-index: 2;
 }
 
@@ -83,12 +85,12 @@ body {
 .nombres {
   margin-top: 55px;
   font-family: 'Allura', cursive;
-  font-size: 3.4rem;
+  font-size: 3.0rem;
   color: #8aa39b;
 }
 
 .nombres span {
-  font-size: 1.5rem;
+  font-size: 1.0rem;
 }
 
 .subtitle {
@@ -117,6 +119,7 @@ body {
   animation: pulse 2s infinite;
   position: relative;
   top: 10px;
+  z-index: 5;
 }
 
 @keyframes pulse {
@@ -124,6 +127,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
