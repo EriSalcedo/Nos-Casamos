@@ -3,5 +3,5 @@ const musica = document.getElementById("musica");
 
 sello.addEventListener("click", () => {
   musica.volume = 0.7;
-  musica.play().catch(() => {});
+  musica.play();
 });
