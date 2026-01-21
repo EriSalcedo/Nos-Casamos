@@ -110,8 +110,8 @@ body {
 /* SELLO */
 .sello {
   position: absolute;
-  left: 50%;
-  bottom: 50%;
+  left: 52%;
+  bottom: 48%;
   transform: translate(-50%, -50%);
   width: 75px;
   height: 75px;
@@ -132,14 +132,3 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
-
-
-
-
-
-
-
-
-
-
-
