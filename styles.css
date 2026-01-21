@@ -39,16 +39,21 @@ body {
   background:
     linear-gradient(
       to bottom right,
-      transparent 49.6%,
-      #9f9b92 50%,
-      transparent 50.4%
+      transparent 0%,
+      transparent 48%,
+      #9f9b92 49%,
+      #9f9b92 51%
+      transparent 52%
     ),
     linear-gradient(
       to bottom left,
-      transparent 49.6%,
-      #9f9b92 50%,
-      transparent 50.4%
+      transparent 0%,
+      transparent 48%,
+      #9f9b92 49%,
+      #9f9b92 51%,
+      transparent 52%
     );
+  clip-path: inset(0 0 48% 0);
   pointer-events: none;
   z-index: 1;
 }
@@ -56,7 +61,7 @@ body {
 .envelope-back {
   position: absolute;
   inset: 0;
-  z-index: ;
+  z-index: 0;
 }
 
 /* Solapa */
@@ -87,20 +92,20 @@ body {
 
 .nombres {
   position: absolute;
-  top: 28px;
+  top: 22px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Allura', cursive;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   color: #8aa39b;
   text-align: center;
-  line-height: 1.05;
+  line-height: 1;
   z-index: 5;
 }
 
 .nombres span {
   font-size: 1.1rem;
-  margin: -4px 0;
+  margin: -6px 0;
   display: block;
 }
 
@@ -139,3 +144,4 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
