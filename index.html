@@ -1,141 +1,48 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cristian & Erika</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body {
-  background: #f6f7f5;
-  font-family: 'Cormorant Garamond', serif;
-}
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-#portada {
-  height: 100vh;
-  background-image: url("img/portada.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
+<body>
 
-/* SOBRE */
-.envelope {
-  position: relative;
-  width: 380px;
-  height: 500px;
-  background: #e8e4d8;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-  overflow: hidden;
-  z-index: 1;
-}
-/*lineas */
-.envelope::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(135deg,
-      transparent 51%,
-      #9c9c9c 49%,
-      #9c9c9c 51%,
-      transparent 52%),
-    linear-gradient(-135deg,
-      transparent 51%,
-      #9c9c9c 49%,
-      #9c9c9c 51%,
-      transparent 52%);
-  z-index: 2;
-  pointer-events: none;
-}
+  <!-- Música -->
+  <audio id="musica" loop>
+    <source src="audio/musica.mp3" type="audio/mpeg">
+  </audio>
 
-.envelope-back {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
+  <section id="portada">
+    <div class="envelope">
 
-/* Solapa */
-.envelope-front {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50%;
-  background: #e8e4d8;
-  clip-path: polygon(0 100%, 50% 0, 100% 100%);
-  border-top: 2px solid #9a968d;
-  box-shadow: inset 0 8px 10px rgba(0,0,0,0.04);
-  z-index: 1;
-}
+      <!-- Solapa superior -->
+      <div class="envelope-top"></div>
 
-/* CONTENIDO ENCIMA */
-.contenido {
-  position: absolute;
-  inset: 0;
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 20px;
-  text-align: center;
-  pointer-events: none;
-}
+      <!-- Solapa inferior -->
+      <div class="envelope-front"></div>
 
-.nombres {
-  position: absolute;
-  top: 35px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Allura', cursive;
-  font-size: 3.5rem;
-  color: #8aa39b;
-  text-align: center;
-  line-height: 1;
-  z-index: 10;
-}
+      <!-- Contenido -->
+      <div class="contenido">
+        <h1 class="nombres">
+          Cristian<br>
+          <span>&</span>
+          Erika
+        </h1>
 
-.nombres span {
-  font-size: 2.1rem;
-  margin: -10px 0 -10px 0;
-  display: block;
-}
+        <button class="sello" id="sello" aria-label="Abrir invitación"></button>
 
-.subtitle {
-  position: absolute;
-  bottom: 26px;
-  font-size: 1.4rem;
-  letter-spacing: 1px; 
-  margin-bottom: 28px;
-  color: #6f7f79;
-  font-style: italic;
-  opacity: 0.9;
-  z-index: 10;
-}
+        <p class="subtitle">"Una historia está a punto de comenzar"</p>
+      </div>
 
-/* SELLO */
-.sello {
-  position: absolute;
-  left: 40%;
-  bottom: 42%;
-  transform: translate(-50%, -50%);
-  width: 75px;
-  height: 75px;
-  background-image: url("img/sello.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  pointer-events: auto;
-  z-index: 20;
-  animation: pulse 2s infinite;
-}
+    </div>
+  </section>
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-  100% { transform: scale(1); }
-}
+  <script src="script.js"></script>
+</body>
+</html>
