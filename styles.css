@@ -30,21 +30,22 @@ body {
   overflow: hidden;
   z-index: 1;
 }
+/*lineas */
 .envelope::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
     linear-gradient(135deg,
-      transparent 60%,
+      transparent 54%,
       #9c9c9c 50%,
       #9c9c9c 53%,
-      transparent 53%),
+      transparent 50%),
     linear-gradient(-135deg,
-      transparent 60%,
+      transparent 54%,
       #9c9c9c 50%,
       #9c9c9c 53%,
-      transparent 53%);
+      transparent 50%);
   z-index: 2;
   pointer-events: none;
 }
@@ -138,6 +139,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
