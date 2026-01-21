@@ -25,7 +25,7 @@ body {
   position: relative;
   width: 320px;
   height: 460px;
-  background: #f4f4f2;
+  background: #f3f1eb;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
   overflow: hidden;
 }
@@ -81,6 +81,7 @@ body {
 }
 
 .nombres {
+  margin-top: 55px;
   font-family: 'Allura', cursive;
   font-size: 3.4rem;
   color: #8aa39b;
@@ -91,14 +92,20 @@ body {
 }
 
 .subtitle {
-  font-style: italic;
+  font-size: 1.2rem;
+  letter-spacing: 1px; 
+  margin-bottom: 45px;
   color: #6f7f79;
+  font-style: italic;
+  opacity: 0.85;
 }
 
 /* SELLO */
 .sello {
-  width: 70px;
-  height: 70px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 72px;
+  height: 72px;
   background-image: url("img/sello.png");
   background-size: cover;
   background-position: center;
@@ -108,6 +115,8 @@ body {
   cursor: pointer;
   pointer-events: auto;
   animation: pulse 2s infinite;
+  position: relative;
+  top: 10px;
 }
 
 @keyframes pulse {
@@ -115,6 +124,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
