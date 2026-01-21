@@ -25,45 +25,36 @@ body {
   position: relative;
   width: 300px;
   height: 480px;
-  background: #ebe7dc;
+  background: #e8e4d8;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
   overflow: hidden;
   z-index: 1;
 }
 
 /* Líneas del sobre */
-.envelope::before {
-  content: "";
+.line {
   position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      135deg,
-      transparent 49.5%,
-      #b7b4ad 50%,
-      transparent 50.5%
-    ),
-    linear-gradient(
-      225deg,
-      transparent 49.5%,
-      #b7b4ad 50%,
-      transparent 50.5%
-    );
-  z-index: 1;
-  pointer-events: none;
+  width: 2px;
+  height: 100%;
+  background: #a9a59d;
+  top: 0;
+  left: 50%;
+  transform-origin: center top;
+}
+.line.tl {
+  transform: rotate(45deg);
 }
 
-.envelope::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: #e6e2d6;
-  clip-path: polygon(0 0, 50% 100%, 100% 0);
-  border-bottom: 2px solid #b7b4ad;
-  z-index: 2;
+.line.tr {
+  transform: rotate(-45deg);
+}
+
+.line.bl {
+  transform: rotate(-135deg);
+}
+
+.line.br {
+  transform: rotate(135deg);
 }
 
 .envelope-back {
@@ -88,7 +79,7 @@ body {
 .contenido {
   position: absolute;
   inset: 0;
-  z-index: 3;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,7 +87,6 @@ body {
   padding: 50px 20px;
   text-align: center;
   pointer-events: none;
-  z-index: 4;
 }
 
 .nombres {
@@ -121,8 +111,6 @@ body {
 
 /* SELLO */
 .sello {
-  margin-top: 40px;
-  margin-bottom: 40px;
   width: 72px;
   height: 72px;
   background-image: url("img/sello.png");
@@ -133,10 +121,8 @@ body {
   border: none;
   cursor: pointer;
   pointer-events: auto;
+  z-index: 10;
   animation: pulse 2s infinite;
-  position: relative;
-  top: 10px;
-  z-index: 5;
 }
 
 @keyframes pulse {
@@ -144,6 +130,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
