@@ -12,5 +12,6 @@ sello.addEventListener("click", () => {
   setTimeout(() => {
     envelope.style.display = "none";
     invitacion.classList.add("visible");
-  }, 1200);
+  }, 2000);
 });
+
