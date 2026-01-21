@@ -42,7 +42,7 @@ body {
       #9c9c9c 51%,
       transparent 52%),
     linear-gradient(-135deg,
-      transparent 48%,
+      transparent 51%,
       #9c9c9c 49%,
       #9c9c9c 51%,
       transparent 52%);
@@ -139,6 +139,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
