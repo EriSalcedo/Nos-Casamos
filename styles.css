@@ -28,8 +28,13 @@ body {
   background: #e8e4d8;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
   overflow: hidden;
+  transition: opacity 0.8s ease;
   z-index: 1;
 }
+.envelope.desaparece {
+  opacity:0;
+}
+  
 /*lineas */
 .envelope::before {
   content: "";
@@ -66,7 +71,8 @@ body {
   clip-path: polygon(0 100%, 50% 0, 100% 100%);
   border-top: 2px solid #9a968d;
   box-shadow: inset 0 8px 10px rgba(0,0,0,0.04);
-  transition: transform 1.2s ease, opacity 0.8s ease;
+  transition: transform 1.6s cubic-bezier(.22,.61,.36,1),
+    opacity 1s ease;
   z-index: 1;
 }
 .envelope-front {
@@ -188,6 +194,7 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
 
 
 
