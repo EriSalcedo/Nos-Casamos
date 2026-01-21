@@ -30,18 +30,45 @@ body {
   overflow: hidden;
   z-index: 1;
 }
+.sobre-superior,
+.sobre-inferior {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  overflow: hidden;
+  transition: transform 1.8s cubic-bezier(.22,.61,.36,1);
+}
+
+.sobre-superior {
+  top: 0;
+  z-index: 10;
+}
+
+.sobre-inferior {
+  bottom: 0;
+  z-index: 9;
+}
+.envelope.abierto .sobre-superior {
+  transform: translateY(-110%);
+}
+
+.envelope.abierto .sobre-inferior {
+  transform: translateY(110%);
+}
+
 /*lineas */
 .envelope::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(135deg,
+    linear-gradient(135deg),
       transparent 51%,
       #9c9c9c 49%,
       #9c9c9c 51%,
       transparent 52%),
-    linear-gradient(-135deg,
+    linear-gradient(-135deg),
       transparent 51%,
       #9c9c9c 49%,
       #9c9c9c 51%,
@@ -139,3 +166,4 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
