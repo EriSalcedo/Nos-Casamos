@@ -24,7 +24,7 @@ body {
 .envelope {
   position: relative;
   width: 300px;
-  height: 450px;
+  height: 480px;
   background: #ebe7dc;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
   overflow: hidden;
@@ -40,14 +40,14 @@ body {
 }
 
 .envelope::before {
-  border-left: 1px solid #b7b4ad;
-  border-right: 1px solid #b7b4ad;
-  clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+  border-left: 2px solid #b7b4ad;
+  border-right: 2px solid #b7b4ad;
+  clip-path: polygon(100% 100%, 0, 50% 100% 0);
 }
 
 .envelope::after {
-  border-top: 1px solid #b7b4ad;
-  clip-path: polygon(0 0, 50% 50%, 100% 0);
+  border-top: 2px solid #b7b4ad;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
 }
 
 .envelope-back {
@@ -127,6 +127,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
