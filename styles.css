@@ -32,26 +32,6 @@ body {
   z-index: 1;
 }
 
-.sobre-superior,
-.sobre-inferior {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  left: 0;
-  overflow: hidden;
-  transition: transform 1.8s cubic-bezier(.22,.61,.36,1);
-}
-
-.sobre-superior {
-  top: 0;
-  z-index: 10;
-}
-
-.sobre-inferior {
-  bottom: 0;
-  z-index: 9;
-}
-
 /*lineas */
 .envelope::before,{
   content: "";
@@ -212,4 +192,5 @@ body {
 .envelope.abierto .sobre-inferior {
   transform: translateY(120%);
 }
+
 
