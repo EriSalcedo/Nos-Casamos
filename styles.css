@@ -7,9 +7,7 @@
 body {
   background: #f6f7f5;
   font-family: 'Cormorant Garamond', serif;
-}
-body.avanzar #portada {
-  transform: translateY(-100vh);
+  overflow: hidden;
 }
 
 #portada {
@@ -20,9 +18,14 @@ body.avanzar #portada {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  transition: transform 1.6s ease-in-out;
+  position: fixed;
+  transition: transform 1.6s ease;
   z-index: 2;
+  inset: 0;
+}
+
+body.avanzar #portada {
+  transform: translateY(-100vh);
 }
 
 /* SOBRE */
@@ -159,11 +162,18 @@ body.avanzar #portada {
   pointer-events: none;
   z-index: 1;
   transition: opacity 1.2s ease;
+  overflow-y: auto;
 }
  body.avanzar #invitación {
    opacity: 1;
    pointer-events: auto;
  }
+.invitacion-contenido {
+  min-height: 100vh;
+  padding: 60px 24px;
+}
+
+
 
 
 
