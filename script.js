@@ -4,7 +4,8 @@ const musica = document.getElementById("musica");
 sello.addEventListener("click", () => {
   musica.volume = 0.7;
   musica.play();
-  document.doby.classList.add("avanzar");
+  document.body.classList.add("avanzar");
 });
+
 
 
