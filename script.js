@@ -1,12 +1,7 @@
-.envelope.abierto .sobre-superior {
-  transform: translateY(-110%);
-}
+const sello = document.getElementById("sello");
+const musica = document.getElementById("musica");
 
-.envelope.abierto .sobre-inferior {
-  transform: translateY(110%);
-}
-
-.envelope.abierto .contenido {
-  opacity: 0;
-  transition: opacity 0.6s ease;
-}
+sello.addEventListener("click", () => {
+  musica.volume = 0.7;
+  musica.play();
+});
