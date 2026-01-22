@@ -8,13 +8,8 @@ body {
   background: #f6f7f5;
   font-family: 'Cormorant Garamond', serif;
 }
-body.abierto #portada {
+body.avanzar #portada {
   transform: translateY(-100%);
-}
-body.avanzar #invitacion {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
 }
 
 #portada {
@@ -26,9 +21,9 @@ body.avanzar #invitacion {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
   inset: 0,
-  transition: transform 1.6s cubic-bexier(.4,0,.2,1);
+  transition: transform 1.6s ease-in-out;
   z-index: 2;
 }
 
@@ -156,12 +151,6 @@ body.avanzar #invitacion {
   transform: translateY(120%);
   transition: transform 1.6s ease-in-out;
 }
-#escena {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
 
 #invitacion {
   position: absolute;
@@ -177,4 +166,5 @@ body.avanzar #invitacion {
   transform: translateY(100vh);
   transition: opacity 1s ease;
 }
+
 
