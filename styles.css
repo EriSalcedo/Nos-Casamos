@@ -200,6 +200,8 @@ body.avanzar #portada {
   object-fit: cover;
   opacity: 0;
   transform: translateY(20px);
+}
+body.avanzar .fotoPrincipal {
   animation: fotoEntrada 1.2s ease-out forwards;
   animation-delay: 0.4s;
 }
@@ -209,6 +211,7 @@ body.avanzar #portada {
     transform: traslateY(0);
   }
 }
+
 
 
 
