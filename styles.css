@@ -142,12 +142,10 @@ body.avanzar #portada {
 }
 .envelope.abierto .sobre-superior {
   transform: translateY(-120%);
-  transition: transform 1.6s ease-in-out;
 }
 
 .envelope.abierto .sobre-inferior {
   transform: translateY(120%);
-  transition: transform 1.6s ease-in-out;
 }
 
 #invitacion {
@@ -155,5 +153,6 @@ body.avanzar #portada {
   background: #f6f7f5;
   position: relative;
 }
+
 
 
