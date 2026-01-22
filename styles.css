@@ -153,5 +153,16 @@ body.avanzar #portada {
 #invitacion {
   height: 100vh;
   background: #f6f7f5;
-  position: relative;
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 1.2s ease;
 }
+ body.avanzar #invitación {
+   opacity: 1;
+   pointer-events: auto;
+ }
+
+
