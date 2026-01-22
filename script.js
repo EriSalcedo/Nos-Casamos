@@ -1,8 +1,12 @@
-const envelope = document.querySelector(".envelope");
+.envelope.abierto .sobre-superior {
+  transform: translateY(-110%);
+}
 
-sello.addEventListener("click", () => {
-  musica.volume = 0.7;
-  musica.play();
+.envelope.abierto .sobre-inferior {
+  transform: translateY(110%);
+}
 
-  envelope.classList.add("abierto");
-});
+.envelope.abierto .contenido {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
