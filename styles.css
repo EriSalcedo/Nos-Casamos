@@ -95,7 +95,7 @@ body.avanzar #invitacion {
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Allura', cursive;
-  font-size: 3.5rem;
+  font-size: 3.7rem;
   color: #8aa39b;
   text-align: center;
   line-height: 1;
@@ -103,7 +103,7 @@ body.avanzar #invitacion {
 }
 
 .nombres span {
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   margin: -10px 0 -10px 0;
   display: block;
 }
@@ -111,8 +111,8 @@ body.avanzar #invitacion {
 .subtitle {
   position: absolute;
   bottom: 26px;
-  font-size: 1.4rem;
-  letter-spacing: 1px; 
+  font-size: 1.5rem;
+  letter-spacing: 0.8px; 
   margin-bottom: 28px;
   color: #6f7f79;
   font-style: italic;
@@ -166,6 +166,7 @@ body.avanzar #invitacion {
   transform: translateY(100vh);
   transition: transform 1.6s ease-in-out;
 }
+
 
 
 
