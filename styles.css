@@ -86,7 +86,7 @@ body.avanzar #portada {
 
 .nombres {
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Allura', cursive;
@@ -164,6 +164,7 @@ body.avanzar #portada {
    opacity: 1;
    pointer-events: auto;
  }
+
 
 
 
