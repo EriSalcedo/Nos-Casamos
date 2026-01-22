@@ -124,7 +124,7 @@ body.avanzar #invitacion {
 .sello {
   position: absolute;
   left: 40%;
-  bottom: 42%;
+  bottom: 41%;
   transform: translate(-50%, -50%);
   width: 75px;
   height: 75px;
@@ -166,6 +166,7 @@ body.avanzar #invitacion {
   transform: translateY(100vh);
   transition: transform 1.6s ease-in-out;
 }
+
 
 
 
