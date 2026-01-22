@@ -183,16 +183,14 @@ body.avanzar #portada {
    opacity: 1;
    pointer-events: auto;
  }
-.invitacion-contenido {
+.contenido-invitacion {
   min-height: 100vh;
-  padding: 60px 24px;
-}
-.seccion-foto {
-  height: 80vh;
   display: flex;
-  justify-content: center;
+  padding: 60px 24px;
+    justify-content: center;
   aling-items: center;
 }
+
 .fotoPrincipal {
   width: 90%;
   max-width: 350px;
@@ -210,16 +208,8 @@ body.avanzar .fotoPrincipal {
     opacity: 1;
     transform: traslateY(0);
   }
+.fotoPrincipal {
+  opacity: 1 !important;
+  transform: none !important;
+  border: 3px solid red;
 }
-
-
-
-
-
-
-
-
-
-
-
-
