@@ -86,11 +86,11 @@ body.avanzar #portada {
 
 .nombres {
   position: absolute;
-  top: 30px;
+  top: 23px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Allura', cursive;
-  font-size: 3.9rem;
+  font-size: 4rem;
   color: #8aa39b;
   text-align: center;
   line-height: 1;
@@ -98,15 +98,15 @@ body.avanzar #portada {
 }
 
 .nombres span {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   margin: -10px 0 -10px 0;
   display: block;
 }
 
 .subtitle {
   position: absolute;
-  bottom: 26px;
-  font-size: 1.5rem;
+  bottom: 23px;
+  font-size: 1.8rem;
   letter-spacing: 1px; 
   margin-bottom: 28px;
   color: #6f7f79;
@@ -164,6 +164,7 @@ body.avanzar #portada {
    opacity: 1;
    pointer-events: auto;
  }
+
 
 
 
