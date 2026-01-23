@@ -217,13 +217,11 @@ body.avanzar #portada {
   -webkit-mask-size: 130%;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-mode: alpha;
 
   mask-image: url("img/mask-acuarela.png");
   mask-size: 130%;
   mask-position: center;
   mask-repeat: no-repeat;
-  mask-mode: alpha;
 
   overflow: hidden;
   
@@ -309,6 +307,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
