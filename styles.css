@@ -214,12 +214,12 @@ body.avanzar #portada {
   align-items: center;
   
   -webkit-mask-image: url("img/mask-acuarela.png");
-  -webkit-mask-size: 130%;
+  -webkit-mask-size: 120%;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
 
   mask-image: url("img/mask-acuarela.png");
-  mask-size: 130%;
+  mask-size: 120%;
   mask-position: center;
   mask-repeat: no-repeat;
 
@@ -233,16 +233,22 @@ body.avanzar #portada {
   0% {
     -webkit-mask-position: center 10%;
     mask-position: center 10%;
+     -webkit-mask-size: 128%;
+    mask-size: 128%
   }
 
   50% {
     -webkit-mask-position: center 2%;
     mask-position: center 2%;
+    -webkit-mask-size: 134%;
+    mask-size: 134%;
   }
 
   100% {
     -webkit-mask-position: center 10%;
     mask-position: center 10%;
+    -webkit-mask-size: 128%;
+    mask-size: 128%;
   }
 }
 
@@ -307,6 +313,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
