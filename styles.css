@@ -191,7 +191,7 @@ body.avanzar #portada {
   align-items: center;
 }
 .seccion-foto {
-  width: 100%;
+  width: 120%;
   min-height: 100vh;
   padding: 80px 0 40px;
   display: flex;
@@ -313,6 +313,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
