@@ -179,7 +179,7 @@ body.avanzar #portada {
   transition: opacity 1.2s ease;
   overflow-y: auto;
 }
- body.avanzar #invitación {
+ body.avanzar #invitacion {
    opacity: 1;
    pointer-events: auto;
  }
@@ -188,7 +188,7 @@ body.avanzar #portada {
   display: flex;
   padding: 60px 24px;
     justify-content: center;
-  aling-items: center;
+  align-items: center;
 }
 
 .fotoPrincipal {
@@ -206,10 +206,7 @@ body.avanzar .fotoPrincipal {
 @keyframes fotoEntrada {
   to {
     opacity: 1;
-    transform: traslateY(0);
+    transform: translateY(0);
   }
-.fotoPrincipal {
-  opacity: 1 !important;
-  transform: none !important;
-  border: 3px solid red;
 }
+
