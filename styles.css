@@ -201,7 +201,6 @@ body.avanzar #portada {
   overflow: hidden;
 }
 
-}
 .foto-mascara {
   width: 88%;
   max-width: 340px;
@@ -232,18 +231,18 @@ body.avanzar #portada {
 }
 @keyframes acuarelaRespira {
   0% {
-    -webkit-mask-position: center 8%;
-    mask-position: center 8%;
+    -webkit-mask-position: center 10%;
+    mask-position: center 10%;
   }
 
   50% {
-    -webkit-mask-position: center 0%;
-    mask-position: center 0%;
+    -webkit-mask-position: center 2%;
+    mask-position: center 2%;
   }
 
   100% {
-    -webkit-mask-position: center 8%;
-    mask-position: center 8%;
+    -webkit-mask-position: center 10%;
+    mask-position: center 10%;
   }
 }
 
@@ -308,6 +307,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
