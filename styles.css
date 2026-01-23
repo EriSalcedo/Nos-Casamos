@@ -191,9 +191,10 @@ body.avanzar #portada {
   align-items: center;
 }
 .seccion-foto {
-  width: 120%;
+  width: 100%;
   min-height: 100vh;
-  padding: 80px 0 40px;
+  padding-top: 24px;
+  padding-bottom: 0;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -202,12 +203,12 @@ body.avanzar #portada {
 }
 
 .foto-mascara {
-  width: 90%;
-  max-width: 360px;
+  width: 94%;
+  max-width: 420px;
   height: auto;
   max-height: 70vh;
   aspect-ratio: 3 / 4;
-  margin-top: 20px;
+  margin-top: 0;
 
   display: flex;
   justify-content: center;
@@ -226,8 +227,8 @@ body.avanzar #portada {
   overflow: hidden;
   
   opacity: 0;
-  transform: translateY(30px);
-  animation: acuarelaRespira 8s ease-in-out infinite;
+  transform: translateY(40px);
+  animation: acuarelaRespira 9s ease-in-out infinite;
 }
 @keyframes acuarelaRespira {
   0% {
@@ -252,10 +253,9 @@ body.avanzar #portada {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-height: 700px) {
   .foto-mascara {
-    max-width: 360px;
-    max-height: 65vh;
+    max-width: 380px;
   }
 }
 
@@ -313,6 +313,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
