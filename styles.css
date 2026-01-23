@@ -193,7 +193,7 @@ body.avanzar #portada {
 .seccion-foto {
   width: 100%;
   min-height: 100vh;
-  padding-top: 24px;
+  padding-top: 12px;
   padding-bottom: 0;
   display: flex;
   align-items: flex-start;
@@ -203,53 +203,51 @@ body.avanzar #portada {
 }
 
 .foto-mascara {
-  width: 94%;
-  max-width: 420px;
-  height: auto;
-  max-height: 70vh;
+  .foto-mascara {
+  width: 96%;
+  max-width: 480px;
   aspect-ratio: 3 / 4;
-  margin-top: 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
+  margin-top: -20px;
+
   -webkit-mask-image: url("img/mask-acuarela.png");
-  -webkit-mask-size: cover;
-  -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 135%;
 
   mask-image: url("img/mask-acuarela.png");
-  mask-size: cover;
-  mask-position: center;
   mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 135%;
 
   overflow: hidden;
-  
+
   opacity: 0;
   transform: translateY(40px);
-  animation: acuarelaRespira 9s ease-in-out infinite;
+  animation: acuarelaRespira 10s ease-in-out infinite;
 }
+
 @keyframes acuarelaRespira {
   0% {
-    -webkit-mask-position: center 6%;
-    mask-position: center 6%;
-     -webkit-mask-size: 105%;
-    mask-size: 105%
+    mask-size: 132%
+   -webkit-mask-size: 132%;
+    mask-position: center 4%;  
   }
 
   50% {
-    -webkit-mask-position: center 0%;
+    mask-size: 140%;
+    -webkit-mask-size: 140%;
     mask-position: center 0%;
-    -webkit-mask-size: 112%;
-    mask-size: 112%;
   }
 
   100% {
-    -webkit-mask-position: center 6%;
-    mask-position: center 6%;
-    -webkit-mask-size: 105%;
-    mask-size: 105%;
+    mask-size: 132%;
+    -webkit-mask-size: 132%;
+    mask-position: center 4%;
   }
 }
 
@@ -313,20 +311,3 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
