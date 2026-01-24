@@ -204,25 +204,25 @@ body.avanzar #portada {
 
 .foto-mascara {
   .foto-mascara {
-  width: 96%;
-  max-width: 480px;
+  width: 88%;
+  max-width: 380px;
   aspect-ratio: 3 / 4;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-top: -20px;
+  margin-top: -10px;
 
   -webkit-mask-image: url("img/mask-acuarela.png");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
-  -webkit-mask-size: 135%;
+  -webkit-mask-size: 120%;
 
   mask-image: url("img/mask-acuarela.png");
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-size: 135%;
+  mask-size: 120%;
 
   overflow: hidden;
 
@@ -233,20 +233,20 @@ body.avanzar #portada {
 
 @keyframes acuarelaRespira {
   0% {
-    mask-size: 132%
-   -webkit-mask-size: 132%;
+    mask-size: 118%
+   -webkit-mask-size: 118%;
     mask-position: center 4%;  
   }
 
   50% {
-    mask-size: 140%;
-    -webkit-mask-size: 140%;
+    mask-size: 124%;
+    -webkit-mask-size: 124%;
     mask-position: center 0%;
   }
 
   100% {
-    mask-size: 132%;
-    -webkit-mask-size: 132%;
+    mask-size: 118%;
+    -webkit-mask-size: 118%;
     mask-position: center 4%;
   }
 }
@@ -311,3 +311,4 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
