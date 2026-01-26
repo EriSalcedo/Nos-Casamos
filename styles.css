@@ -193,7 +193,7 @@ body.avanzar #portada {
 .seccion-foto {
   width: 100%;
   min-height: 100vh;
-  padding-top: 0px;
+  padding-top: 8px;
   padding-bottom: 0;
   display: flex;
   align-items: flex-start;
@@ -206,37 +206,33 @@ body.avanzar #portada {
   width: 100%;
   height: 64vh; 
   max-height: 522px;
+  max-width: 390px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .foto-hero img{
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
   object-position: center 35%;
 }
 
-.acuarela-top,
-.acuarela-bottom {
+.acuarela-overlay {
   position: absolute;
+  top: -40px;
   left: 0;
   width: 100%;
-  height: 120px;
+  height: 160px;
+
   background-image: url("img/mask-acuarela.png");
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
   pointer-events: none;
-}
-
-.acuarela-top {
-  top: 0;
-  transform: rotate(180deg);
-  animation: acuarelaFlotaTop 8s ease-in-out infinite;
-}
-
-.acuarela-bottom {
-  bottom: 0;
-  animation: acuarelaFlotaBottom 9s ease-in-out infinite;
+  animation: acuarelaFlota 8s ease-in-out infinite;
 }
 
 @media (max-width: 480px) {
@@ -245,22 +241,19 @@ body.avanzar #portada {
   }
 }
 
-@keyframes acuarelaFlotaTop {
-  0%   { transform: rotate(180deg) translateY(0); }
-  50%  { transform: rotate(180deg) translateY(12px); }
-  100% { transform: rotate(180deg) translateY(0); }
-}
-
-@keyframes acuarelaFlotaBottom {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-14px); }
-  100% { transform: translateY(0); }
-}
-
-body.avanzar .foto-mascara {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 1.6s ease, transform 1.6s ease;
+@keyframes acuarelaFlota {
+  0% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(18px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
 }
 
 @keyframes fotoAcuarela {
@@ -286,14 +279,6 @@ body.avanzar .foto-mascara {
     rgba(0,0,0,0.6) 75%,
     rgba(0,0,0,0) 100%
   );
-
-  mask-image: radial-gradient(
-    ellipse at center,
-    rgba(0,0,0,1) 60%,
-    rgba(0,0,0,0.6) 75%,
-    rgba(0,0,0,0) 100%
-  );
-}
 
 body.avanzar .fotoPrincipal {
   animation: fotoEntrada 1.2s ease-out forwards;
