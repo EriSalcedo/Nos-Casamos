@@ -8,23 +8,6 @@ body {
   margin: 0;
   background-color: #f6f7f5;
   font-family: 'Cormorant Garamond', serif;
-  overflow: hidden;
-
-  background-color: #f6f7f5;
-  background-image: url("img/fondo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center top;
-}
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  
-  background: rgba(246,247,245,0.82);
-
-  z-index:-1
 }
 
 #portada {
@@ -319,3 +302,4 @@ body.avanzar .fotoPrincipal {
   opacity: 0.08;
   pointer-events: none;
 }
+
