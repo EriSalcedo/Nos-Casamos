@@ -208,8 +208,6 @@ body.avanzar #portada {
   max-height: 540px;
   max-width: 390px;
   overflow: hidden;
-  margin: 0 auto;
-  margin-top: -40px;
 }
 
 .foto-hero img{
@@ -217,7 +215,6 @@ body.avanzar #portada {
   height: 100%;
   object-fit: cover;
   object-position: center 22%;
-  animation: respiracion 10s ease-in-out infinite;
 
   -webkit-mask-image: url("img/mask-acuarela.png");
   -webkit-mask-repeat: no-repeat;
@@ -232,15 +229,18 @@ body.avanzar #portada {
 
 .acuarela-overlay {
   position: absolute;
-  top: -60px;
+  top: -30px;
   left: 0;
   width: 100%;
-  height: 300px;
+  height: 220px;
 
   background-image: url("img/mask-acuarela.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  mix-blend-mode: multiply;
+  opacity: 0.35;
 
   pointer-events: none;
   z-index: 3;
@@ -291,6 +291,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
