@@ -214,18 +214,22 @@ body.avanzar #portada {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
 
-  /* MÁSCARA REAL */
-  -webkit-mask-image: url("img/mask-acuarela.png");
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: top center;
-  -webkit-mask-size: 100% auto;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 30%,
+    white 70%,
+    white 100%
+  );
 
-  mask-image: url("img/mask-acuarela.png");
-  mask-repeat: no-repeat;
-  mask-position: top center;
-  mask-size: 100% auto;
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 30%,
+    white 70%,
+    white 100%
+  );
 }
 
 .fade-blanco {
@@ -321,6 +325,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
