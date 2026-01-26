@@ -265,7 +265,7 @@ body.avanzar #portada {
     opacity: 0.85;
   }
   50% {
-    transform: translateY(12px);
+    transform: translateY(18px);
     opacity: 1;
   }
   100% {
@@ -291,6 +291,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
