@@ -170,7 +170,7 @@ body.avanzar #portada {
 
 #invitacion {
   height: 100vh;
-  background: #f6f7f5;
+  background: transparent;
   position: fixed;
   inset: 0;
   opacity: 0;
@@ -184,11 +184,16 @@ body.avanzar #portada {
    pointer-events: auto;
  }
 .contenido-invitacion {
+  background: #f6f7f5;
+  max-width: 420px;
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   padding: 60px 24px;
-    justify-content: center;
+  justify-content: center;
   align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  border-radius: 8px;
 }
 .seccion-foto {
   width: 100%;
@@ -297,3 +302,19 @@ body.avanzar .fotoPrincipal {
   opacity: 0.08;
   pointer-events: none;
 }
+body {
+  background-color: #f6f7f5;
+  background-image: url("fondo.jpg");
+  background-repeat: repeat;
+  background-size: 600px;
+  font-family: 'Cormorant Garamond', serif;
+  overflow: hidden;
+}
+body {
+  background-color: #f6f7f5;
+  background-image: url("fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
