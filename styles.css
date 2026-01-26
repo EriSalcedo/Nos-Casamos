@@ -202,21 +202,21 @@ body.avanzar #portada {
   overflow: hidden;
 }
 .foto-hero {
-  position: relative;
   width: 100%;
-  height: 72vh; 
-  max-height: 560px;
   max-width: 390px;
+  height: 68vh;
+  max-height: 560px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
-.foto-hero img{
+.foto-hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
-  display: block;
+  object-position: center 30%;
 
+  /* MÁSCARA REAL */
   -webkit-mask-image: url("img/mask-acuarela.png");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: top center;
@@ -224,8 +224,8 @@ body.avanzar #portada {
 
   mask-image: url("img/mask-acuarela.png");
   mask-repeat: no-repeat;
-  mask-position: top center;
-  mask-size: 100% auto;
+  mask-position: center -40px;
+  mask-size: 120% auto;
 }
 
 .fade-blanco {
@@ -314,6 +314,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
