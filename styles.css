@@ -204,8 +204,8 @@ body.avanzar #portada {
 .foto-hero {
   position: relative;
   width: 100%;
-  height: 70vh; 
-  max-height: 540px;
+  height: 72vh; 
+  max-height: 560px;
   max-width: 390px;
   overflow: hidden;
 }
@@ -214,7 +214,8 @@ body.avanzar #portada {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: center 20%;
+  display: block;
 
   -webkit-mask-image: url("img/mask-acuarela.png");
   -webkit-mask-repeat: no-repeat;
@@ -227,30 +228,46 @@ body.avanzar #portada {
   mask-size: 100% auto;
 }
 
-.acuarela-overlay {
+.fade-blanco {
   position: absolute;
-  top: -30px;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 300px;
+  height: 55%;
 
-  background-image: 
-    linear-gradient(to bottom, 
-      #f6f7f5 0%, 
-      rgba(246,247,245,0.95) 40%, 
-      rgba(246,247,245,0) 100%
-    ),
-    url("img/mask-acuarela.png");
+  background: linear-gradient(
+    to bottom,
+    #f6f7f5 0%,
+    rgba(246,247,245,0.95) 35%,
+    rgba(246,247,245,0.75) 55%,
+    rgba(246,247,245,0.3) 75%,
+    rgba(246,247,245,0) 100%
+  );
 
+  pointer-events: none;
+  z-index: 2;
+}
+
+.textura-acuarela {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 220px;
+
+  background-image: url("img/mask-acuarela.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 
-  opacity: 0.9;
-  pointer-events: none;
-  animation: acuarelaFlota 9s ease-in-out infinite;
-}
+  opacity: 0.18;
+  mix-blend-mode: multiply;
 
+  pointer-events: none;
+  z-index: 3;
+
+  animation: flotar 10s ease-in-out infinite;
+}
 
 @media (max-width: 480px) {
   .foto-hero {
@@ -258,11 +275,12 @@ body.avanzar #portada {
   }
 }
 
-@keyframes respiracion {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.015); }
-  100% { transform: scale(1); }
+@keyframes flotar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(14px); }
+  100% { transform: translateY(0); }
 }
+
 
 @keyframes acuarelaFlota {
   0% {
@@ -296,6 +314,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
