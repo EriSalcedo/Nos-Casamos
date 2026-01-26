@@ -204,8 +204,8 @@ body.avanzar #portada {
 .foto-hero {
   position: relative;
   width: 100%;
-  height: 64vh; 
-  max-height: 522px;
+  height: 70vh; 
+  max-height: 560px;
   max-width: 390px;
   overflow: hidden;
   margin: 0 auto;
@@ -213,18 +213,18 @@ body.avanzar #portada {
 
 .foto-hero img{
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center 30%;
 }
 
 .acuarela-overlay {
   position: absolute;
-  top: -40px;
+  top: -90px;
   left: 0;
   width: 100%;
-  height: 160px;
+  height: 260px;
 
   background-image: url("img/mask-acuarela.png");
   background-repeat: no-repeat;
@@ -232,7 +232,8 @@ body.avanzar #portada {
   background-size: cover;
 
   pointer-events: none;
-  animation: acuarelaFlota 8s ease-in-out infinite;
+  z-index: 3;
+  animation: acuarelaFlota 10s ease-in-out infinite;
 }
 
 @media (max-width: 480px) {
@@ -244,15 +245,15 @@ body.avanzar #portada {
 @keyframes acuarelaFlota {
   0% {
     transform: translateY(0);
-    opacity: 0.9;
+    opacity: 0.85;
   }
   50% {
-    transform: translateY(18px);
+    transform: translateY(12px);
     opacity: 1;
   }
   100% {
     transform: translateY(0);
-    opacity: 0.9;
+    opacity: 0.85;
   }
 }
 
@@ -262,23 +263,6 @@ body.avanzar #portada {
     transform: translateY(0);
   }
 }
-
-.fotoPrincipal {
-  width: 100%;
-  height: 100%
-  max-width: 350px;
-  border-radius: 12px;
-  object-fit: cover;
-  opacity: 0;
-  transform: translateY(20px);
-}
-.fotoPrincipal {
-  -webkit-mask-image: radial-gradient(
-    ellipse at center,
-    rgba(0,0,0,1) 60%,
-    rgba(0,0,0,0.6) 75%,
-    rgba(0,0,0,0) 100%
-  );
 
 body.avanzar .fotoPrincipal {
   animation: fotoEntrada 1.2s ease-out forwards;
@@ -290,6 +274,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
