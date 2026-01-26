@@ -204,8 +204,8 @@ body.avanzar #portada {
 .foto-hero {
   position: relative;
   width: 100%;
-  height: 62vh; 
-  max-height: 520px;
+  height: 64vh; 
+  max-height: 522px;
   overflow: hidden;
 }
 
@@ -213,7 +213,7 @@ body.avanzar #portada {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 35%;
 }
 
 .acuarela-top,
@@ -231,16 +231,30 @@ body.avanzar #portada {
 .acuarela-top {
   top: 0;
   transform: rotate(180deg);
+  animation: acuarelaFlotaTop 8s ease-in-out infinite;
 }
 
 .acuarela-bottom {
   bottom: 0;
+  animation: acuarelaFlotaBottom 9s ease-in-out infinite;
 }
 
 @media (max-width: 480px) {
   .foto-hero {
     height: 58vh;
   }
+}
+
+@keyframes acuarelaFlotaTop {
+  0%   { transform: rotate(180deg) translateY(0); }
+  50%  { transform: rotate(180deg) translateY(12px); }
+  100% { transform: rotate(180deg) translateY(0); }
+}
+
+@keyframes acuarelaFlotaBottom {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
 }
 
 body.avanzar .foto-mascara {
@@ -291,6 +305,7 @@ body.avanzar .fotoPrincipal {
     transform: translateY(0);
   }
 }
+
 
 
 
