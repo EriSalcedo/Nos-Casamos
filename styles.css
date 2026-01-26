@@ -195,6 +195,23 @@ body.avanzar #portada {
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   border-radius: 8px;
 }
+.papel-invitacion {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+
+  background-image: url("img/papel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 32px 20px;
+
+  border-radius: 6px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
 .seccion-foto {
   width: 100%;
   min-height: 100vh;
@@ -302,4 +319,5 @@ body.avanzar .fotoPrincipal {
   opacity: 0.08;
   pointer-events: none;
 }
+
 
