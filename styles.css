@@ -197,15 +197,15 @@ body.avanzar #portada {
 }
 .papel-invitacion {
   width: 100%;
-  max-width: 550px;
-  margin: 0 auto;
+  max-width: 420px;
+  margin: -10 auto;
 
   background-image: url("img/papel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  padding: 32px 20px;
+  padding: 100px;
 
   border-radius: 6px;
 
@@ -288,6 +288,7 @@ body.avanzar .foto-hero-img {
     transform: translateY(0);
   }
 }
+
 
 
 
